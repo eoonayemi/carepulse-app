@@ -155,7 +155,7 @@ export const AppointmentForm = ({
                 <SelectItem
                   key={doctor.name + i}
                   value={doctor.name}
-                  className="text-white group"
+                  className="text-white"
                 >
                   <div className="flex cursor-pointer items-center gap-2">
                     <Image
@@ -165,9 +165,7 @@ export const AppointmentForm = ({
                       alt="doctor"
                       className="rounded-full border border-dark-500"
                     />
-                    <p className="text-white group-hover:text-black">
-                      {doctor.name}
-                    </p>
+                    <p className="text-white">{doctor.name}</p>
                   </div>
                 </SelectItem>
               ))}
